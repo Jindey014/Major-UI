@@ -1,0 +1,93 @@
+.slider-header {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.slider-container p {
+    width: 80vw;
+    margin: auto;
+}
+
+#main-slider-container {
+    width: 90%;
+    height: 350px;
+    margin: 30px auto;
+    display: flex;
+    position: relative;
+    align-items: center;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+#slider {
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
+#slider::-webkit-scrollbar {
+    display: none;
+}
+
+.left {
+    background: rgb(255, 233, 176);
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0.4;
+}
+
+.right {
+    background: rgb(255, 233, 176);
+    border-radius: 100%;
+    position: absolute;
+    right: 0;
+    opacity: 0.4;
+}
+
+.slider-icon.left:hover,
+.slider-icon.right:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.slider-card {
+    width: 270px;
+    height: 340px;
+
+    border-radius: 15px;
+    display: inline-block;
+    margin-left: 7px;
+    margin-right: 7px;
+    box-shadow: 0px 0px 7px rgb(221, 159, 2);
+}
+
+.slider-card-image {
+    width: 100%;
+    height: 250px;
+    background-color: #f3f3f3;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+.slider-card p {
+    margin: 7px 0px 5px 10px;
+}
+
+.slider-card .slider-card-title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.slider-card .slider-card-description {
+    opacity: 0.5;
+}
+
+.slider-rating {
+    color: rgb(221, 159, 2);
+    ;
+}
